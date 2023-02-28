@@ -25,7 +25,7 @@ namespace RegexProgram
         public void ValidateLastName(string name)
         {
             //Cruise
-            string lastName = "^[A - Z]{1}[a - z]{3,}?";
+            string lastName = "^[A-Z]{1}[a-z]{3,}?";
             if (Regex.IsMatch(name, lastName))
             {
                 Console.WriteLine("Last Name is matching with Regex");
