@@ -48,5 +48,17 @@ namespace RegexProgram
                 Console.WriteLine("Email is not matching");
             }
         }
+        public void ValidatePhoneNumber(string phoneNumber)
+        {
+            string number = @"[0-9]{2}\s[0-9]{10}";
+            if (Regex.IsMatch(phoneNumber, number))
+            {
+                Console.WriteLine("Number is matching");
+            }
+            else
+            {
+                Console.WriteLine("Number is not matching");
+            }
+        }
     }
 }

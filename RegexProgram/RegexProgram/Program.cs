@@ -14,7 +14,7 @@ namespace RegexProgram
             while (flag)
             {
                 Console.WriteLine("Enter the option number");
-                Console.WriteLine("1.Validate first name \n2.Validate last name \n3.Validate email id \n0.Exit");
+                Console.WriteLine("1.Validate first name \n2.Validate last name \n3.Validate email id \n4.Validate phone no \n0.Exit");
                 Console.WriteLine();
                 RegexProblem regex = new RegexProblem();
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -28,6 +28,9 @@ namespace RegexProgram
                         break;
                     case 3:
                         regex.ValidateEmailId("abc.xyz@bl.co.in");
+                        break;
+                    case 4:
+                        regex.ValidatePhoneNumber("91 7894561232");
                         break;
                     case 0:
                         flag = false;
