@@ -14,7 +14,7 @@ namespace RegexProgram
             while (flag)
             {
                 Console.WriteLine("Enter the option number");
-                Console.WriteLine("1.Validate first name \n2.Validate last name \n3.Validate email id \n4.Validate phone no \n5.Password minimum eight characters \n0.Exit");
+                Console.WriteLine("1.Validate first name \n2.Validate last name \n3.Validate email id \n4.Validate phone no \n5.Password minimum eight characters \n6.Password with atleast one upper case \n0.Exit");
                 Console.WriteLine();
                 RegexProblem regex = new RegexProblem();
                 int option = Convert.ToInt32(Console.ReadLine());
@@ -34,6 +34,9 @@ namespace RegexProgram
                         break;
                     case 5:
                         regex.ValidatePassword("abCDef784");
+                        break;
+                    case 6:
+                        regex.ValidateString("Phoenix123");
                         break;
                     case 0:
                         flag = false;

@@ -73,5 +73,18 @@ namespace RegexProgram
                 Console.WriteLine("Password is not matching");
             }
         }
+        public void ValidateString(string passWord)
+        {
+            string name = @"(?=.*[A-Z])[A-Za-z0-9]{8,}";
+
+            if (Regex.IsMatch(passWord, name))
+            {
+                Console.WriteLine("It is matching with Regex");
+            }
+            else
+            {
+                Console.WriteLine("It is not matchng with Regex");
+            }
+        }
     }
 }
