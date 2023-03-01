@@ -60,5 +60,18 @@ namespace RegexProgram
                 Console.WriteLine("Number is not matching");
             }
         }
+        public void ValidatePassword(string password)
+        {
+            string pass = @"[A-Z a-z 0-9]{8,}"
+;
+            if (Regex.IsMatch(password, pass))
+            {
+                Console.WriteLine("Password is matching");
+            }
+            else
+            {
+                Console.WriteLine("Password is not matching");
+            }
+        }
     }
 }
