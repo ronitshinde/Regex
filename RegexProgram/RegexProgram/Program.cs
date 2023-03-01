@@ -32,7 +32,7 @@ namespace RegexProgram
                     case 4:
                         regex.ValidatePhoneNumber("91 7894561232");
                         break;
-                        case 5:
+                    case 5:
                         regex.ValidatePassword("abCDef784");
                         break;
                     case 0:
