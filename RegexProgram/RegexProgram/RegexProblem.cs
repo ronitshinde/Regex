@@ -36,5 +36,17 @@ namespace RegexProgram
                 Console.WriteLine("Last Name is not matching with Regex");
             }
         }
+        public void ValidateEmailId(string emailId)
+        {
+            string email = "^[a-zA-Z]+[.+_-]{1}[a-z]+[@][a-zA-Z]+[.][a-z]{2,3}([.][a-z]{2}){0,1}$";
+            if (Regex.IsMatch(emailId, email))
+            {
+                Console.WriteLine("Email is matching");
+            }
+            else
+            {
+                Console.WriteLine("Email is not matching");
+            }
+        }
     }
 }
